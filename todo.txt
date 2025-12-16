@@ -1,0 +1,33 @@
+1. Design All Expected Sections ✅
+
+2. Add consistancy in all of your Design ✅
+
+3. Images foldering structure ✅
+
+4. Functionality ✅
+
+5. Compressing Images Sizing ✅
+
+6. Remaining Parts [ Case Study ✅, Form ✅]
+
+7. Website Content ✅
+
+8. Testimonial Section
+
+9. Add Iframe into html ✅ [ check on mobile why it's not working close button]
+
+10. Website Logo
+
+
+========== Decide Content about
+- Confirm: Pricing, discount, original pricing.
+- XAANs vs Other Comparison ✅
+- Website Cost Section and content ✅
+
+
+Hi there, Here I will send you my html code and your task is to rephrase content inside the html 
+so that I can safe my website from Plagiarisam effect, remember to change only content inside html not the 
+html code or it's attributes etc.
+Your rephrase should be professional, attractive and obeys best marketing tactics.
+Only give me code of html with expected rephrase content, do not need any explanation.
+here's the html code: [  ]

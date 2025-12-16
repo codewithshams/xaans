@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a1a5d18a86.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>XAANs Campaign</title>
+  </head>
+  <body>
+    <header class="discount-div" onclick="openModal()">
+      <div class="discount-banner container">
+        <!-- @todo - Find good text or image and fix it's responsive position  -->
+        <div class="head-cols head-cols1">
+          <!-- <h2 class = "wait">Special Offer</h2> -->
+          <img
+            src="./images/medium-offer.png"
+            class="desktop-img"
+            alt="special offer"
+          />
+          <img
+            src="./images/small-offer.png"
+            class="mobile-img"
+            alt="special offer"
+          />
+        </div>
+        <div class="head-cols head-cols2">
+          <h4>65% <br /><span>OFF</span></h4>
+        </div>
+        <div class="head-cols head-cols3">
+          <span class="timing"><span class="days">02</span><span>d</span></span>
+          <span class="timing"
+            ><span class="hours">04</span><span>h</span></span
+          >
+          <span class="timing"
+            ><span class="minutes">04</span><span>m</span></span
+          >
+          <span class="timing"
+            ><span class="seconds">45</span><span>s</span></span
+          >
+        </div>
+        <div class="head-cols head-cols4">
+          <h4>
+            <span class="original-price">$400</span>
+            <span class="discount-price">$70</span> - TO LAUNCH YOUR WEBSITE
+          </h4>
+        </div>
+        <div class="head-cols head-cols5">
+          <button class="btn">
+            <span><i class="fa fa-solid fa-gift"></i></span>
+            Save <span class="saved-price">$330</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ============================== Form Modal Section ======================= -->
+      <!-- Form Modal -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h2>Fill Your Detail</h2>
+          <form id="enrollForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Success Modal -->
+      <div class="modal success-modal" id="successModal">
+        <div class="modal-content">
+          <p>
+            <strong>🎉 Thank You for Your Submission! 🎉</strong><br />
+            We’ve successfully received your details and are thrilled about the
+            opportunity to work with you.
+          </p>
+          <p>
+            <strong>What’s Next?</strong><br />
+            Our team will review your submission and contact you within the next
+            3 business days to discuss your requirements and take the next steps
+            toward launching your stunning new website.
+          </p>
+          <p>
+            Thank you for choosing us to build your online presence. We’re
+            excited to get started on creating something amazing for you!
+          </p>
+        </div>
+
+        <div id="closeModalBtn">Close</div>
+      </div>
+
+      <!-- Error Modal -->
+      <div class="modal error-modal" id="errorModal">
+        <div class="modal-content">
+          <p>❌ An error occurred. Please try again later!</p>
+        </div>
+
+        <div id="closeModalBtn">Close</div>
+      </div>
+
+      <!-- Already Enrolled Modal -->
+      <div class="modal already-modal" id="alreadyModal">
+        <div class="modal-content">
+          <p>
+            ✅ You have already submitted details, We will reach out to you
+            soon. Thank you for your patience.
+          </p>
+        </div>
+
+        <div id="closeModalBtn">Close</div>
+      </div>
+      <section class="hero-sec">
+        <div id="sticky-head">
+          <div class="sticky-header container">
+            <div class="logo">
+              <h3><a href="./index.html">XAANs</a></h3>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#xaan-vs-others">XAANs vs Others</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#questions">Questions</a></li>
+              </ul>
+            </nav>
+            <div class="menu-btn">
+              <button
+                class="btn call-btn"
+                onclick="window.location.href='tel:+0453459589'"
+              >
+                <span><i class="fa fa-solid fa-phone"></i></span
+                ><span>(045) 345-9589</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="offer-section container">
+          <div class="offer-content">
+            <div class="offer-details">
+              <h2>Launch Your Website in <span>7 Days</span></h2>
+              <p>
+                Drive more sales, secure bookings, and capture leads with a
+                stunning website tailored to your business—at an unbeatable
+                value.
+              </p>
+              <ul class="features">
+                <li><i class="fa fas fa-check"></i> Free Domain</li>
+                <li><i class="fa fas fa-check"></i> Professional Email</li>
+                <li><i class="fa fas fa-check"></i> Reliable Hosting</li>
+                <li><i class="fa fas fa-check"></i> 0% Commission</li>
+              </ul>
+              <button class="cta" onclick="openModal()">
+                Claim Your 65% Discount
+              </button>
+              <div class="guarantee">
+                <span
+                  ><i class="fa fas fa-star"></i> 4.8 Star Customer Rating</span
+                >
+                <span
+                  ><i class="fa fas fa-shield-alt"></i> Risk-Free: 30-Day Refund
+                  Policy</span
+                >
+              </div>
+            </div>
+            <div class="offer-banner">
+              <div class="sale-banner">
+                <!-- <h2 class = "wait">Limited-Time <span class="sale">Offer</span></h2> -->
+                <img
+                  src="./images/special-offer.png"
+                  alt="Limited-Time Sale Offer"
+                  class="sale-banner-img"
+                />
+                <!-- <p>
+                  <span class="original-price">$400</span>
+                  <span class="discount-price">$70</span>
+                </p>
+                <p class="fee-info">One-time payment + just $16.99/month thereafter</p> -->
+              </div>
+              <div class="countdown">
+                <div class="countdown-item">
+                  <span class="days">01</span><span>DAYS</span>
+                </div>
+                <div class="countdown-item">
+                  <span class="Hours">14</span><span>HRS</span>
+                </div>
+                <div class="countdown-item">
+                  <span class="minutes">21</span><span>MIN</span>
+                </div>
+                <div class="countdown-item">
+                  <span class="seconds">34</span><span>SEC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="companies container">
+          <img src="./images/companies.png" alt="worked companies" />
+        </div>
+        <div class="tv-div container">
+          <div class="img-div">
+            <img src="./images/tv1.png" class="tv" alt="business tv" />
+            <img src="./images/tv2.png" class="tv" alt="business tv" />
+            <div class="tv-attached">
+              <img
+                src="./images/tv-editor.png"
+                class="tv-editor"
+                alt="tv tv-editor"
+              />
+              <img
+                src="./images/color-editor.png"
+                class="color-editor"
+                alt="tv color-editor"
+              />
+              <img
+                src="./images/tv-booking.png"
+                class="tv-item"
+                alt="tv tv-booking"
+              />
+              <img
+                src="./images/tv-cart.png"
+                class="tv-item"
+                alt="tv tv-cart"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================ Examples Section =============== -->
+      <section id="examples" class="website-preview">
+        <div class="container">
+          <h2>Your Dream Website, Ready in Just 7 Days</h2>
+          <p>
+            We craft websites tailored for over 500 industries—serving
+            everything from small businesses to large-scale ecommerce.
+          </p>
+          <div class="website-categories">
+            <div class="category">
+              <h3>Life Coach</h3>
+              <div class="image">
+                <img src="./images/tv2.png" alt="Life Coach Website Design" />
+              </div>
+              <div class="actions">
+                <button class="preview" onclick="openPreview(0)">
+                  Preview Now
+                </button>
+                <button class="get" onclick="openModal()">Get Started</button>
+              </div>
+            </div>
+            <div class="category">
+              <h3>Wellness</h3>
+              <div class="image">
+                <img src="./images/tv1.png" alt="Wellness Website Design" />
+              </div>
+              <div class="actions">
+                <button class="preview" onclick="openPreview(1)">
+                  Preview Now
+                </button>
+                <button class="get" onclick="openModal()">Get Started</button>
+              </div>
+            </div>
+            <div class="category">
+              <h3>Painter</h3>
+              <div class="image">
+                <img src="./images/tv2.png" alt="Painter Website Design" />
+              </div>
+              <div class="actions">
+                <button class="preview" onclick="openPreview(2)">
+                  Preview Now
+                </button>
+                <button class="get" onclick="openModal()">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================ Our Work ( Working Flow ) =============== -->
+      <section class="working-sec">
+        <div class="container working-div">
+          <div class="content">
+            <h2>How It Works</h2>
+            <p>Join us today and see the simple steps to your new website</p>
+            <div class="steps">
+              <div class="step">
+                <hr />
+                <h3>01</h3>
+                <p>Fill out our quick and easy online questionnaire.</p>
+                <span>15-30 minutes</span>
+              </div>
+
+              <div class="step">
+                <hr />
+                <h3>02</h3>
+                <p>Our team will create your website from start to finish.</p>
+                <span>7 days</span>
+              </div>
+
+              <div class="step">
+                <hr />
+                <h3>03</h3>
+                <p>
+                  We go live with your website during a Zoom session with you.
+                </p>
+                <span>30 minutes</span>
+              </div>
+            </div>
+            <button class="cta" onclick="openModal()">
+              Claim Your 65% Discount
+            </button>
+          </div>
+
+          <div class="img-div">
+            <img src="./images/man-laptop.png" alt="man with laptop" />
+          </div>
+        </div>
+      </section>
+      <!-- ===================== Trusted Section ===================== -->
+      <section class="trusted-section">
+        <div class="container">
+          <div class="trust-head">
+            <h2>Preferred by over 1000 business owners since 2020</h2>
+            <div class="img-div">
+              <img src="./images/verified.png" alt="Certified Company" />
+            </div>
+          </div>
+          <div class="reviews">
+            <button class="arrow left">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+            <div class="review-slider">
+              <div class="review">
+                <div class="stars">
+                  <img src="./images/stars.png" alt="Star Ratings" />
+                </div>
+                <h3>Exceptional Support Throughout</h3>
+                <p>
+                  The XAANs team provided outstanding support and turned my
+                  vision into reality with ease.
+                </p>
+                <span><strong>J. Carter, </strong>2 hours ago</span>
+              </div>
+              <div class="review">
+                <div class="stars">
+                  <img src="./images/stars.png" alt="Star Ratings" />
+                </div>
+                <h3>Highly Recommend XAANs</h3>
+                <p>
+                  Amazing customer care! They listened to all my needs and
+                  delivered a stunning website.
+                </p>
+                <span><strong>V. Smith, </strong>5 hours ago</span>
+              </div>
+              <div class="review">
+                <div class="stars">
+                  <img src="./images/stars.png" alt="Star Ratings" />
+                </div>
+                <h3>Quick and Professional Service</h3>
+                <p>
+                  The representative was knowledgeable and resolved all my
+                  questions efficiently.
+                </p>
+                <span><strong>P. Johnson, </strong>1 day ago</span>
+              </div>
+              <div class="review">
+                <div class="stars">
+                  <img src="./images/stars.png" alt="Star Ratings" />
+                </div>
+                <h3>Impressive Results Delivered</h3>
+                <p>
+                  XAANs transformed my ideas into a professional website that’s
+                  driving real results!
+                </p>
+                <span><strong>K. Lee, </strong>3 days ago</span>
+              </div>
+              <div class="review">
+                <div class="stars">
+                  <img src="./images/stars.png" alt="Star Ratings" />
+                </div>
+                <h3>Exceeded My Expectations</h3>
+                <p>
+                  Their expertise and attention to detail really stood out.
+                  Couldn’t ask for more.
+                </p>
+                <span><strong>S. Ahmed, </strong>2 weeks ago</span>
+              </div>
+              <div class="review">
+                <div class="stars">
+                  <img src="./images/stars.png" alt="Star Ratings" />
+                </div>
+                <h3>Fantastic Service and Value</h3>
+                <p>
+                  XAANs offers a combination of quality and affordability that
+                  is hard to beat.
+                </p>
+                <span><strong>A. Brown, </strong>1 month ago</span>
+              </div>
+              <div class="review">
+                <div class="stars">
+                  <img src="./images/stars.png" alt="Star Ratings" />
+                </div>
+                <h3>Reliable and Trustworthy Team</h3>
+                <p>
+                  The XAANs team handled my project with professionalism and
+                  delivered on time.
+                </p>
+                <span><strong>T. Wilson, </strong>3 months ago</span>
+              </div>
+            </div>
+            <button class="arrow right">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+          <p class="footer-text">
+            Rated <b>4.8</b> / 5 based on <b>6,421 reviews</b>. Highlighting our
+            5-star feedback.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================ Comparison Table ================= -->
+      <section id="xaan-vs-others" class="comparison-table">
+        <div class="container table-content">
+          <h2>Why Choose XAANs?</h2>
+          <p>
+            Ditch the hassle of DIY platforms and expensive agencies—experience
+            the perfect blend of both worlds.
+          </p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>XAANs</th>
+                  <th>DIY <br />(Wix, Squarespace, GoDaddy)</th>
+                  <th>Hire an Agency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Guaranteed website launch success</td>
+                  <td>100%</td>
+                  <td>10-20%</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>Design and Content Done for you</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+                  <td>✔️</td>
+                </tr>
+                <tr>
+                  <td>Start quickly with any domain</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                </tr>
+                <tr>
+                  <td>Launch assistance & training session</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+                  <td>✔️</td>
+                </tr>
+                <tr>
+                  <td>Access premium tools with no limits</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>Dedicated one-on-one support</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+                  <td>✔️</td>
+                </tr>
+                <tr>
+                  <td>Reliable and high-speed hosting</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                </tr>
+                <tr>
+                  <td>Website live in just one week</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>Unlimited revisions within 30 days</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>Biggest challenge</td>
+                  <td>Not discovering us sooner</td>
+                  <td>Complex tools, slow to launch, unsatisfactory results</td>
+                  <td>Expensive setup and hard to manage afterward</td>
+                </tr>
+                <tr class="pricing">
+                  <td>
+                    <button class="cta" onclick="openModal()">
+                      Get 65% off
+                    </button>
+                  </td>
+                  <td><b>$79 one-time + $16.99/mo</b></td>
+                  <td><b>$500 annually + countless hours tinkering</b></td>
+                  <td>
+                    <b>$1500-$3000 upfront + ongoing maintenance costs</b>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- ========================  Features Section =============== -->
+      <section class="features-section">
+        <div class="container">
+          <h2>Discover the Exclusive Features of Your XAANs Website</h2>
+          <p>
+            Everything you need to launch and grow a successful online presence
+          </p>
+          <div class="features-grid">
+            <div class="feature">
+              <img src="./images/web-design.png" alt="Design and Content" />
+              <h4>Custom design crafted just for you</h4>
+            </div>
+            <div class="feature">
+              <img
+                src="./images/domainemail.png"
+                alt="Custom Domain and Email"
+              />
+              <h4>Professional domain name & secure email</h4>
+            </div>
+            <div class="feature">
+              <img src="./images/premium-tools.png" alt="Easy-to-use editor" />
+              <h4>Access to premium tools, unlimited updates</h4>
+            </div>
+            <div class="feature">
+              <img src="./images/sales.png" alt="0% Commission" />
+              <h4>Enjoy 0% commission on all your sales</h4>
+            </div>
+            <div class="feature">
+              <img src="./images/call-schedule.png" alt="Appointments" />
+              <h4>Round-the-clock appointment scheduling</h4>
+            </div>
+            <div class="feature">
+              <img src="./images/one-to-one.png" alt="1-to-1 Call" />
+              <h4>Personalized 1-on-1 launch support</h4>
+            </div>
+          </div>
+          <button class="cta list-btn" id="openModal">
+            Explore the complete feature list
+          </button>
+        </div>
+      </section>
+
+      <!-- =============================== Case Study Section ====================== -->
+      <section class="caseStudy-section">
+        <div class="container">
+          <h2>How can a XAANs website help your business?</h2>
+          <p>Our websites drive traffic, bookings, and sales</p>
+          <div class="case-study">
+            <div class="case-study-text">
+              <span class="case-label">CASE STUDY</span>
+              <h2>Old Navy achieved 500% ROI on their website in 4 months</h2>
+              <p>
+                Old Navy ranks in <strong>top 20</strong> for most famous
+                <strong>Ecommerce</strong> Brands in USA.
+              </p>
+            </div>
+            <div class="case-study-image">
+              <img
+                src="./images/case-study.png"
+                alt="Google Maps Search Result"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================  Modal Section ====================== -->
+      <div class="feature-modal" id="featureModal">
+        <div class="featureModal-content">
+          <button class="featureClose" id="featureClose-modal">&times;</button>
+          <h3>Everything Included in Your Package</h3>
+          <div class="modal-grid">
+            <div>
+              <h3>What we do for you:</h3>
+              <ul>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Design and build a professional, mobile-optimized multi-page
+                    website tailored to your business needs, delivered within 7
+                    days.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Organize and enhance your images and videos to perfectly
+                    represent your brand.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Write compelling, SEO-friendly content to showcase your
+                    products and services effectively.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Implement a responsive design that ensures a seamless user
+                    experience across all devices.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Add integrated booking, ecommerce, and lead generation tools
+                    to help you grow your business.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Perform a one-on-one launch call to guide you through your
+                    website and make final tweaks.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Provide unlimited edits and updates for 30 days after
+                    launch.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Additional benefits included:</h3>
+              <ul>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    A custom domain name and a professional email inbox to
+                    establish credibility.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Fast, secure hosting with SSL encryption to ensure your
+                    website stays safe and reliable.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Unlimited sales, bookings, and lead generation with no
+                    commission fees.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Ongoing platform updates to keep your website ahead of the
+                    curve.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Access to premium tools for creating, editing, and enhancing
+                    your website without extra costs.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    Expert SEO setup to ensure your site ranks higher on Google
+                    and attracts more visitors.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    24/7 appointment booking tools to help you manage your
+                    schedule effortlessly.
+                  </span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>
+                    A dedicated support team available to assist you before,
+                    during, and after your website launch.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================= About XAANs ================== -->
+      <section class="about-xaans">
+        <div class="container">
+          <div class="content-wrapper">
+            <div class="text-content">
+              <h2>Who We Are at XAANs</h2>
+              <p>
+                XAANs is short for YOU & I, highlighting our collaborative
+                approach...
+              </p>
+              <p>
+                Since 2020, XAANs has been empowering small business owners with
+                a professional online presence at an
+                <span class="highlight">unbeatable price</span>.
+              </p>
+              <p>
+                Our mission combines a tech-driven approach to crafting elegant,
+                user-friendly websites with a
+                <span class="highlight">dedicated service team</span> that
+                stands by our clients every step of the way—from the initial
+                idea to the final launch and beyond.
+              </p>
+              <p>
+                Whether it’s design, SEO optimization, Google rankings, or
+                attracting customers, you can
+                <span class="highlight"
+                  >rely on our expertise to deliver results</span
+                >.
+              </p>
+            </div>
+            <div class="video-content">
+              <div class="video-wrapper">
+                <img src="./images/about-img.jpg" alt="XAANs Video Thumbnail" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ Website Cost ===================-->
+      <section id="pricing" class="website-cost">
+        <div class="container">
+          <h2>What’s the cost of your website?</h2>
+          <p>
+            Pay a one-time setup fee of $79 to design and launch your site,
+            followed by just $16.99 per month to keep it running smoothly.
+          </p>
+          <div class="cost-cards">
+            <div class="cost-card">
+              <div class="card-header">
+                What you get with the $79 one-time setup fee:
+              </div>
+              <ul>
+                <li>
+                  <span>✔</span>
+                  <span>A professionally built, multi-page website</span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>Professional design and SEO-friendly content</span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>Integrated ecommerce and booking tools</span>
+                </li>
+                <li>
+                  <span>✔</span> <span>Launch your website in just 1 week</span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>Get Unlimited Supports of Premium tools</span>
+                </li>
+                <li>
+                  <span>✔</span>
+                  <span>30 days of unlimited revisions by our team</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cost-card">
+              <div class="card-header">
+                What’s included in the $16.99 monthly fee:
+              </div>
+              <ul>
+                <li>
+                  <span>✔</span>
+                  <span>Custom domain name & professional email</span>
+                </li>
+                <li><span>✔</span> <span>Secure hosting with SSL</span></li>
+                <li>
+                  <span>✔</span>
+                  <span>Digital Marketing Oriented Content Support</span>
+                </li>
+                <li><span>✔</span> <span>No fees on transactions</span></li>
+                <li>
+                  <span>✔</span> <span>Continuous platform enhancements</span>
+                </li>
+                <li><span>✔</span> <span>Priority customer support</span></li>
+              </ul>
+            </div>
+          </div>
+          <button class="cta list-btn">Discover everything included</button>
+        </div>
+      </section>
+
+      <!-- =============================== FAQ ============================= -->
+      <section id="questions" class="faq-section">
+        <div class="container">
+          <h2>Top 6 Questions Asked by Our Customers</h2>
+          <p>Explore the answers below or chat with us for more details</p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                01. What’s included in the website package?
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Our package includes a fully developed, multi-page website
+                  that is optimized for search engines and designed to be
+                  mobile-friendly. Your website will support appointments,
+                  ecommerce, and come with 0% commission fees. Additionally,
+                  you'll receive unlimited hosting, a custom domain, a
+                  professional email inbox, and access to our intuitive website
+                  editor.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                02. How does the website design process work?
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  1. Sign up and secure your website package.<br />
+                  2. Fill out a simple questionnaire about your business and
+                  goals.<br />
+                  3. Our team of experts will craft your website in just 7
+                  days.<br />
+                  4. Launch your site during a 1-on-1 Zoom call where we address
+                  any final adjustments.<br />
+                  That’s it!
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                03. How long does it take to build my website?
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Your website will be ready in just 7 days once you complete
+                  our online questionnaire. Afterward, we’ll finalize everything
+                  with you during a live Zoom session.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                04. Can I make changes to my website after it’s launched?
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Absolutely! Use our user-friendly website editor to update
+                  your site anytime. Plus, we offer 30 days of unlimited edits
+                  after launch to ensure everything meets your expectations.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                05. What if I need help with my website?
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Our dedicated support team is here to assist you with any
+                  questions or concerns. Contact us via email, phone, or through
+                  the chat bubble on our site.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                06. What is the cost of the website package?
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  The package is available for a one-time setup fee of $79, plus
+                  a monthly fee of $16.99 to maintain and run your website. This
+                  ensures your site stays online and up-to-date.
+                </p>
+              </div>
+            </div>
+            <!-- Add more questions as needed -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ============================= Footer Section ========================== -->
+    <footer>
+      <section class="footer-section">
+        <div class="container footer-div">
+          <div class="footer-content">
+            <h2>Launch your dream website in just 7 days.</h2>
+            <p>Risk-free experience. Exceptional customer support.</p>
+            <button class="cta" onclick="openModal()">Get Started</button>
+
+            <h3>XAANs</h3>
+            <p>© 2020-2025 XAANs Limited. All Rights Reserved.</p>
+          </div>
+          <div class="footer-images">
+            <img
+              src="./images/footer-img.png"
+              alt="Website Showcase"
+              class="image image1"
+            />
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
